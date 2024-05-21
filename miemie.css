@@ -1,0 +1,195 @@
+:root {
+    --bg1: #0d0d0c;
+    --bg2: rgb(245, 14, 156);
+    --bg3: #13aff7;
+    --body: #d5e402;
+    --white: rgb(156, 154, 154);
+    --p: rgb(161, 150, 150);
+}
+
+body {
+    background-color: var(--bg1);
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#banner {
+    background: url('img/icegif-1199.gif');
+    height: 100vh;
+    background-size: cover;
+}
+
+.navbar {
+    background: linear-gradient(to bottom,  #28c0eed3, hsla(313, 96%, 47%, 0.882));
+}
+
+
+
+.navbar .nav-link:hover{
+    color: var(--bg3) !important;
+}
+
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--bg3);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    color: var(--bg3);
+    border-color: var(--bg3);
+ }
+
+ #services{
+	background-image: url('black.gif');
+   height: 100vh;
+   background-size: cover;
+ }
+ #about{
+    background: var(--bg1);
+ }
+
+ #cta{
+    background-image: url('amo.gif');
+    position: relative;
+    opacity: 0.90;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+ }
+
+ .icon-box-img{
+    width: 40%;
+ }
+
+ .btn-outline-brand{
+    background-color: transparent;
+    color: var(--bg1);
+    border-color: var(--bg1);
+ }
+
+ .btn-outline-brand:hover {
+    background-color: var(--bg1);
+    color: var(--body);
+ }
+
+ .card {
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ .p-3{
+    background-color: rgb(255, 51, 170);
+ }
+ .card:hover {
+    background-color: #0cc1f8;
+ }
+
+ .card:hover .card-title,
+ .card:hover .card-text,
+ .card:hover .btn {
+    color:#77d0fa;
+ }
+.reviews{
+   background-color: var(--bg3);
+   padding: 30px;
+
+}
+.reviews img{
+   width: 65px;
+    border-radius: 100px;
+    height: 65px;
+
+}
+ .testimonials {
+    background-color: var(--bg3);
+    padding: 30px;
+ }
+
+ .testimonials img{
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+ }
+
+ #reviews a {
+   color: var(--white);
+}
+
+.faq-section {
+   max-width: 800px;
+   margin: auto;
+}
+
+.accordion-item{
+   margin-bottom: 20px;
+   border-radius: 0;
+}
+
+#faq {
+   background-color: var(--brand);
+}
+
+.accordion-button{
+   background-color: hsl(192, 85%, 50%);
+   border: none;
+   border-bottom: 1px solid #3a023a;
+   border-radius: 0;
+   padding: 15px;
+   font-size: 18px;
+   font-weight: 500;
+   color: #343a40;
+   cursor: pointer;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.accordion-body {
+   border-left: 3px solid var(--bg2);
+   padding: 10px 15px;
+   margin-left: 0;
+   background-color: #f8f9fa;
+}
+
+.faq-answer p {
+   margin-bottom: 0;
+}
+
+.accordion-button:focus{
+   box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+   color: var(--bg1);
+}
+/* hover effect for FAQ queston  */
+.accordion-button:hover {
+   background-color: linear-gradient(to bottom, hsla(293, 78%, 58%, 0.829), rgba(243, 178, 227, 0.884));
+   color: var(--bg2);
+}
+
+/* adjust accordion icon*/
+.accordion-button::after {
+   font-family: "font awesome 5 free";
+   content: ""; /* plus icon */
+   float: right;
+   font-weight: 900;
+   margin-left: auto;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+   content: ""; /* minus icon*/
+}
